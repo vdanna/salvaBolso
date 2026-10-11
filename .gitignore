@@ -1,0 +1,319 @@
+# ============================================================
+# SALVA BOLSO - GITIGNORE PRINCIPAL
+# ============================================================
+#
+# Repositorio: salva-bolso
+#
+# Estrutura:
+#   /app      -> Flutter / Dart
+#   /backend  -> Python / FastAPI / PostgreSQL
+#
+# Objetivo:
+# Impedir o versionamento de arquivos temporarios,
+# ambientes virtuais, credenciais, dados financeiros
+# locais e artefatos de compilacao.
+#
+# Regras especificas de cada projeto permanecem nos
+# respectivos arquivos:
+#
+#   /app/.gitignore
+#   /backend/.gitignore
+#
+# ============================================================
+
+
+# ============================================================
+# 1. SISTEMA OPERACIONAL
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# ============================================================
+# 2. EDITORES E AMBIENTES DE DESENVOLVIMENTO
+# ============================================================
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Arquivos temporarios de editores
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+
+
+# ============================================================
+# 3. SEGURANCA - VARIAVEIS DE AMBIENTE
+# ============================================================
+
+# Arquivos contendo configuracoes privadas
+.env
+.env.*
+*.env
+
+# Permitir modelos sem credenciais reais
+!.env.example
+
+
+# ============================================================
+# 4. SEGURANCA - CHAVES PRIVADAS E CERTIFICADOS
+# ============================================================
+
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+
+*.keystore
+*.jks
+*.jceks
+
+# Configuracoes locais do Android
+key.properties
+local.properties
+
+
+# ============================================================
+# 5. SEGURANCA - CREDENCIAIS DE SERVICOS
+# ============================================================
+
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+*service-account*.json
+*service_account*.json
+
+
+# ============================================================
+# 6. PYTHON - AMBIENTES VIRTUAIS
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ============================================================
+# 7. PYTHON - CACHE E ARQUIVOS GERADOS
+# ============================================================
+
+__pycache__/
+
+*.pyc
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.tox/
+.nox/
+.hypothesis/
+
+.coverage
+.coverage.*
+htmlcov/
+
+*.egg-info/
+
+
+# ============================================================
+# 8. FLUTTER / DART - ARQUIVOS GERADOS
+# ============================================================
+
+.dart_tool/
+
+.flutter-plugins
+.flutter-plugins-dependencies
+
+.pub-cache/
+.pub/
+
+**/doc/api/
+
+# Cache de compilacao
+.gradle/
+.swiftpm/
+
+# Arquivos temporarios do Flutter
+**/Flutter/ephemeral/
+**/Flutter/.last_build_id
+
+
+# ============================================================
+# 9. COMPILACAO E DISTRIBUICAO
+# ============================================================
+
+# Diretorios gerados
+build/
+dist/
+
+# Android
+*.apk
+*.aab
+
+# iOS
+*.ipa
+*.xcarchive/
+*.dSYM/
+
+# Flutter - simbolos de compilacao
+app.*.symbols
+app.*.map.json
+
+# Gradle / Kotlin
+/app/android/.kotlin/
+/app/android/.cxx/
+
+
+# ============================================================
+# 10. IOS / MACOS - ARQUIVOS GERADOS
+# ============================================================
+
+**/Pods/
+**/.symlinks/
+
+**/DerivedData/
+**/xcuserdata/
+
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+
+
+# ============================================================
+# 11. BANCOS DE DADOS LOCAIS
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+*.db-journal
+*.sqlite-journal
+*.sqlite3-journal
+
+*.db-wal
+*.db-shm
+
+
+# ============================================================
+# 12. BACKUPS E EXPORTACOES DE BANCO
+# ============================================================
+
+*.dump
+*.backup
+*.bak
+
+*.sql.gz
+*.sql.zip
+
+
+# ============================================================
+# 13. DADOS PRIVADOS DO BACKEND
+# ============================================================
+
+/backend/uploads/
+/backend/storage/
+/backend/private_data/
+
+/backend/backups/
+/backend/exports/
+
+
+# ============================================================
+# 14. LOGS E ARQUIVOS TEMPORARIOS
+# ============================================================
+
+*.log
+
+/backend/logs/
+/backend/tmp/
+/backend/temp/
+
+
+# ============================================================
+# 15. RELATORIOS DE TESTES
+# ============================================================
+
+coverage/
+coverage.xml
+pytest.xml
+
+/app/coverage/
+/backend/htmlcov/
+
+
+# ============================================================
+# 16. ARQUIVOS COMPACTADOS NA RAIZ
+# ============================================================
+
+# Evita adicionar acidentalmente os ZIPs originais
+# usados na preparacao do projeto.
+
+/*.zip
+/*.rar
+/*.7z
+
+
+# ============================================================
+# 17. ARQUIVOS QUE DEVEM SER VERSIONADOS
+# ============================================================
+
+# Nao adicionar regras para ignorar:
+#
+# Flutter:
+#   pubspec.yaml
+#   pubspec.lock
+#   analysis_options.yaml
+#   .metadata
+#
+# Android:
+#   gradlew
+#   gradlew.bat
+#   gradle-wrapper.jar
+#   gradle-wrapper.properties
+#
+# Backend:
+#   requirements.txt
+#   alembic.ini
+#   Dockerfile
+#   docker-compose.yaml
+#
+# Geral:
+#   README.md
+#   .gitignore
+#   .gitattributes
+#
+# As migracoes de banco e o codigo-fonte tambem
+# devem permanecer versionados.
+#
+# ============================================================
+# FIM
+# ============================================================

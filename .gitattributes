@@ -1,0 +1,242 @@
+# ============================================================
+# SALVA BOLSO - GITATTRIBUTES PRINCIPAL
+# ============================================================
+#
+# Repositorio: salva-bolso
+#
+# Estrutura:
+#   /app      -> Flutter / Dart
+#   /backend  -> Python / FastAPI / PostgreSQL
+#
+# Objetivos:
+#   - Padronizar finais de linha entre Windows e Linux.
+#   - Evitar alteracoes desnecessarias nos commits.
+#   - Preservar corretamente arquivos binarios.
+#   - Garantir compatibilidade com Flutter, Gradle e Docker.
+#   - Facilitar o desenvolvimento multiplataforma.
+#
+# ============================================================
+
+
+# ============================================================
+# 1. NORMALIZACAO GERAL
+# ============================================================
+
+# Detectar automaticamente arquivos de texto.
+# Normalizar finais de linha no repositorio.
+
+* text=auto
+
+
+# ============================================================
+# 2. CONFIGURACOES DO GIT
+# ============================================================
+
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+.dockerignore text eol=lf
+
+
+# ============================================================
+# 3. FLUTTER / DART
+# ============================================================
+
+# Codigo-fonte Dart
+*.dart text eol=lf
+
+# Configuracoes Flutter
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Arquivos de dependencias
+*.lock text eol=lf
+
+
+# ============================================================
+# 4. PYTHON / FASTAPI
+# ============================================================
+
+# Codigo-fonte Python
+*.py text eol=lf
+*.pyi text eol=lf
+
+# Configuracoes Python
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+
+# Templates utilizados pelo Alembic
+*.mako text eol=lf
+
+# Scripts SQL
+*.sql text eol=lf
+
+
+# ============================================================
+# 5. ANDROID / GRADLE
+# ============================================================
+
+# Java
+*.java text eol=lf
+
+# Kotlin
+*.kt text eol=lf
+*.kts text eol=lf
+
+# Configuracoes Gradle
+*.gradle text eol=lf
+*.properties text eol=lf
+
+# Gradle Wrapper para Linux
+/app/android/gradlew text eol=lf
+
+# Gradle Wrapper para Windows
+/app/android/gradlew.bat text eol=crlf
+
+
+# ============================================================
+# 6. WINDOWS
+# ============================================================
+
+# Scripts Batch
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Scripts PowerShell
+*.ps1 text eol=crlf
+
+
+# ============================================================
+# 7. LINUX / DOCKER
+# ============================================================
+
+# Scripts Shell
+*.sh text eol=lf
+
+# Docker
+Dockerfile text eol=lf
+Dockerfile.* text eol=lf
+
+# Configuracoes de ambiente de exemplo
+*.example text eol=lf
+
+
+# ============================================================
+# 8. IOS / MACOS
+# ============================================================
+
+# Swift
+*.swift text eol=lf
+
+# Objective-C
+*.h text eol=lf
+*.m text eol=lf
+
+# Configuracoes Xcode
+*.pbxproj text eol=lf
+*.plist text eol=lf
+*.xcconfig text eol=lf
+*.xcscheme text eol=lf
+
+# Interfaces
+*.storyboard text eol=lf
+*.xib text eol=lf
+
+
+# ============================================================
+# 9. ARQUIVOS DE CONFIGURACAO
+# ============================================================
+
+# JSON
+*.json text eol=lf
+
+# XML
+*.xml text eol=lf
+
+# Arquivos de configuracao web
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Arquivos de texto
+*.txt text eol=lf
+
+# Documentacao
+*.md text eol=lf
+*.rst text eol=lf
+
+
+# ============================================================
+# 10. IMAGENS
+# ============================================================
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.bmp binary
+*.avif binary
+
+
+# ============================================================
+# 11. FONTES
+# ============================================================
+
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+
+# ============================================================
+# 12. ARQUIVOS COMPACTADOS
+# ============================================================
+
+*.zip binary
+*.rar binary
+*.7z binary
+*.gz binary
+
+
+# ============================================================
+# 13. ARQUIVOS DE COMPILACAO
+# ============================================================
+
+# Bibliotecas Java / Gradle
+*.jar binary
+*.aar binary
+
+# Aplicativos Android
+*.apk binary
+*.aab binary
+
+# Aplicativos iOS
+*.ipa binary
+
+
+# ============================================================
+# 14. DOCUMENTOS BINARIOS
+# ============================================================
+
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+
+
+# ============================================================
+# 15. BANCOS DE DADOS BINARIOS
+# ============================================================
+
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+
+
+# ============================================================
+# FIM
+# ============================================================

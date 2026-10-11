@@ -1,0 +1,149 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ==================================================
+# SEGURANÇA - VARIÁVEIS DE AMBIENTE
+# ==================================================
+
+.env
+.env.*
+!.env.example
+
+# ==================================================
+# SEGURANÇA - CHAVES E CERTIFICADOS PRIVADOS
+# ==================================================
+
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# ==================================================
+# SEGURANÇA - CREDENCIAIS ADMINISTRATIVAS
+# ==================================================
+
+*service-account*.json
+*service_account*.json
+credentials.json
+secrets.json
+
+# ==================================================
+# ANDROID - CONFIGURAÇÕES LOCAIS E ASSINATURAS
+# ==================================================
+
+android/key.properties
+android/local.properties
+android/.gradle/
+.gradle/
+
+# ==================================================
+# IOS - CONFIGURAÇÕES GERADAS
+# ==================================================
+
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework/
+ios/Flutter/Flutter.framework/
+
+**/xcuserdata/
+**/DerivedData/
+
+# ==================================================
+# BACKUPS E ARQUIVOS LOCAIS
+# ==================================================
+
+*.bak
+*.backup
+
+# ==================================================
+# DADOS LOCAIS DE BANCO
+# ==================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ==================================================
+# ANDROID - ARTEFATOS ADICIONAIS DE COMPILACAO
+# ==================================================
+
+/android/build/
+/android/.kotlin/
+/android/.cxx/
+
+# ==================================================
+# PACOTES DE DISTRIBUICAO
+# ==================================================
+
+*.apk
+*.aab
+*.ipa
+
+# ==================================================
+# IOS - ARQUIVOS DE DISTRIBUICAO
+# ==================================================
+
+*.xcarchive/
+*.dSYM/
+
+*.mobileprovision
+*.provisionprofile
+
+# ==================================================
+# SEGURANCA - ARQUIVOS CONFIDENCIAIS ADICIONAIS
+# ==================================================
+
+secrets.yaml
+secrets.yml
+
+*.jceks

@@ -1,0 +1,57 @@
+# ============================================================
+# SALVA BOLSO - ANDROID
+# ============================================================
+
+# ============================================================
+# GRADLE - ARQUIVOS TEMPORARIOS
+# ============================================================
+
+/.gradle/
+/captures/
+
+# Cache de compilacao Kotlin
+/.kotlin/
+
+# Arquivos nativos gerados
+.cxx/
+
+
+# ============================================================
+# CONFIGURACOES LOCAIS
+# ============================================================
+
+# Caminhos locais do Android SDK
+/local.properties
+
+
+# ============================================================
+# ARQUIVOS GERADOS AUTOMATICAMENTE
+# ============================================================
+
+GeneratedPluginRegistrant.java
+
+
+# ============================================================
+# SEGURANCA - ASSINATURA DO APLICATIVO
+# ============================================================
+
+# Nunca versionar chaves privadas de assinatura.
+
+key.properties
+
+**/*.keystore
+**/*.jks
+
+
+# ============================================================
+# GRADLE WRAPPER
+# ============================================================
+
+# Os seguintes arquivos devem ser versionados:
+#
+# gradlew
+# gradlew.bat
+# gradle/wrapper/gradle-wrapper.jar
+# gradle/wrapper/gradle-wrapper.properties
+#
+# Nao adicionar regras para ignora-los.
